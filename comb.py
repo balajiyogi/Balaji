@@ -1,0 +1,7 @@
+n,k=input().split()
+def fact(n):
+    fact=1
+    for i in range(1,n+1):
+        fact*=i
+    return fact
+print((fact(int(n))//(fact(int(k))*(fact(int(n)-int(k))))))      

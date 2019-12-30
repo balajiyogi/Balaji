@@ -1,0 +1,5 @@
+n,k=map(int,input().split(" "))
+l=list(map(int,input().split(" ",n-1)))
+n=sorted(l[:k])
+l=sorted(l[k:],reverse=True)
+print(*(n+l))

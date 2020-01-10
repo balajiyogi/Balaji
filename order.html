@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ORDER</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="order.css">
+	
+
+</head>
+<body >
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<div class="container bal" >
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6 ball ">
+			<div class="b">
+        		<form >
+
+          		<div >
+            		<h3 style="text-align: center;">Payment</h3>
+            		<div>
+            			<br><label for="card">Accepted Cards</label>
+            			<img src="imgs/visa.png" height="20px" width="30px">
+            			<img src="imgs/master.jpg" height="20px" width="30px">
+            			<img src="imgs/rupay.png" height="20px" width="30px">
+            			<br>
+            			<div class="row">          				
+              				<div class="col-md-8">
+            					<label for="ccnum">CARD NUMBER</label><br>
+            					<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">&ensp;&ensp;
+            				</div>
+            				<div class="col-md-4 ">
+            					<label for="cvv">CVV</label><br>
+            					<input type="password" id="cvv" name="cvv" placeholder="352">
+            				</div>
+            			</div>
+            			<label for="name">CARD HOLDER NAME</label><br>
+            			<input type="text" id="cname" name="cardname" placeholder="Full name on  card">
+            			<br><label for="expdate">EXPERITION DATE</label><br>
+            			<input type="month" name="expdate" max="2030-12" value="2020-06">
+            			<br>
+            		</div>
+            	</div>
+        		<label>
+          		<input type="checkbox" checked="checked"> Accept All Terms&condition
+        		</label><br>
+       			<button type="button"  class="btn btn-primary">Pay</button>
+        		<button type="button"  class="btn btn-danger">Cancel</button>
+      			</form>
+    		</div>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
+</body>
+</html>

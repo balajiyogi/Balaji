@@ -1,0 +1,10 @@
+n=int(input())
+l=[]
+for i in range(n):
+    l.append(input().split(" "))
+for i in range(0,n,n-1):
+    if(l[0][0] == l[len(l)-1][1]) and (l[0][1] == l[len(l)-1][0]):
+        print("YES")
+        break
+else:
+    print("NO")
